@@ -66,11 +66,11 @@ Conversion rate is calculated as successful subscriptions divided by total conta
 
 ### Page 1 — Marketing Performance Overview
 
-![Marketing Performance Overview](Screenshots/Page1_Overview.png)
+![Marketing Performance Overview](Screenshots/Overview.png)
 
 ### Page 2 — Campaign Analysis
 
-![Campaign Analysis](Screenshots/Page2_Campaign_Analysis.png)
+![Campaign Analysis](Screenshots/Campaign_Analysis.png)
 
 ## 🔍 Methodology
 
