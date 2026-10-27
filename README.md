@@ -1,57 +1,100 @@
 # Marketing Funnel & Conversion Performance Analysis
 
-## Project Overview
-This project analyzes direct-marketing campaign data using Microsoft Power BI to evaluate subscription outcomes, compare conversion rates across customer segments, and explore campaign performance.
+A data analytics project built with **Microsoft Power BI** to analyze direct-marketing campaign outcomes, subscription conversion rates, and customer segments using the UCI Bank Marketing dataset.
 
-**Important:** The dataset represents direct-marketing contacts and term-deposit subscriptions rather than a website visitor-to-customer funnel.
+## 📌 Project Overview
 
-## Objectives
-- Measure total contacts, successful subscriptions, unsuccessful contacts, and conversion rate.
-- Compare conversion performance across contact channels and months.
-- Analyze successful subscriptions and conversion rates by job category.
-- Explore how conversion rates vary with campaign contact frequency.
-- Build an interactive Power BI report using slicers and visualizations.
+This project examines direct-marketing contacts and whether customers subscribed to a bank term deposit. An interactive Power BI report presents campaign performance through KPI cards, charts, a monthly conversion heatmap, and slicers.
 
-## Tools Used
+**Note:** This is a direct-marketing campaign analysis, not a website visitor-to-customer funnel.
+
+## 🎯 Objectives
+
+- Measure total contacts and successful and unsuccessful subscriptions.
+- Calculate the overall conversion rate.
+- Compare conversion rates by contact channel and month.
+- Analyze subscription outcomes across job categories.
+- Explore conversion performance by campaign contact frequency.
+- Build an interactive report for campaign performance analysis.
+
+## 🛠️ Tools & Technologies
+
 - Microsoft Power BI Desktop
 - Power Query
 - DAX
 - GitHub
 
-## Dataset
-**Source:** UCI Machine Learning Repository — Bank Marketing Dataset  
-https://archive.ics.uci.edu/dataset/222/bank+marketing
+## 📂 Dataset
 
-The analysis uses `bank-full.csv`, containing 45,211 records and 17 columns.
+**Source:** [UCI Machine Learning Repository — Bank Marketing](https://archive.ics.uci.edu/dataset/222/bank+marketing)
 
-## Key Performance Indicators
-- **Total Contacts:** 45,211
-- **Successful Subscriptions:** 5,289
-- **Unsuccessful Contacts:** 39,922
-- **Overall Conversion Rate:** 11.70%
+**File analyzed:** `bank-full.csv`
 
-## Report Features
-- KPI cards for campaign outcomes
+- Records: 45,211
+- Original columns: 17
+- Target variable: `y` — whether the customer subscribed to a term deposit (`yes` or `no`)
+
+## 📊 Key Performance Indicators
+
+| Metric | Result |
+|---|---:|
+| Total Contacts | 45,211 |
+| Successful Subscriptions | 5,289 |
+| Unsuccessful Contacts | 39,922 |
+| Overall Conversion Rate | 11.70% |
+
+Conversion rate is calculated as successful subscriptions divided by total contacts.
+
+## 📈 Dashboard Features
+
+### Page 1 — Marketing Performance Overview
+- KPI cards
 - Conversion rate by contact channel
 - Monthly conversion trend
 - Campaign outcome distribution
-- Successful subscriptions by job category
+- Successful conversions by job category
 - Monthly conversion-rate matrix by contact channel
-- Interactive month, contact-channel, and job-category slicers
-- Campaign contact-frequency analysis
 
-## Methodology
-Data was imported and prepared in Power Query. DAX measures were created to calculate contact totals, successful and unsuccessful subscriptions, and conversion rate. The resulting measures were used in interactive visualizations to compare campaign outcomes.
+### Page 2 — Campaign Analysis
+- Month, contact-channel, and job-category slicers
+- Successful conversions by job category
+- Conversion rate by job category
+- Conversion rate by campaign contact frequency
+- Analysis notes
 
-## Key Findings
-The overall subscription conversion rate is approximately 11.70%. The report enables further comparison of conversion rates across contact channels, months, job categories, and campaign contact frequency. Segment-specific conclusions should be based on the final report's filtered visual results.
+## 🖼️ Dashboard Screenshots
 
-## Files
-- `Marketing_Funnel_Conversion_Analysis.pbix` — Power BI report
-- `screenshots/` — report screenshots
+Add your uploaded screenshot images below. If they are stored in the repository root, use these paths:
 
-## How to View
-Download the `.pbix` file and open it using Microsoft Power BI Desktop.
+### Page 1 — Overview
+![Marketing Performance Overview](Overview.png)
 
-## Disclaimer
-This project is for educational and analytical purposes. It uses the UCI Bank Marketing dataset and does not represent a live banking campaign.
+### Page 2 — Campaign Analysis
+![Interactive Campaign Analysis](Campaign_Analysis.png)
+
+If your screenshots are inside a folder, update the image paths to include that folder name.
+
+## 🔍 Methodology
+
+1. Imported `bank-full.csv` into Power BI.
+2. Prepared and checked data types using Power Query.
+3. Created DAX measures for total contacts, successful subscriptions, unsuccessful contacts, and conversion rate.
+4. Created a month lookup table to display months in calendar order.
+5. Built visualizations and slicers for segment-level analysis.
+6. Reviewed the overall KPI figures against the full dataset.
+
+## 💡 Key Findings
+
+The dataset contains 45,211 marketing contacts, of which 5,289 resulted in a term-deposit subscription. The overall conversion rate is approximately 11.70%.
+
+The dashboard supports further investigation of differences across contact channels, months, job categories, and campaign contact frequency. Specific segment-level recommendations should be based on the observed visual results.
+
+## 🚀 How to View the Report
+
+1. Download `Marketing_Funnel_Conversion_Analysis.pbix` from this repository.
+2. Open it in Microsoft Power BI Desktop.
+3. Explore both report pages and use the slicers to investigate different segments.
+
+## ⚠️ Disclaimer
+
+This project is for educational and portfolio purposes. It uses the UCI Bank Marketing dataset and does not represent a live banking campaign.
