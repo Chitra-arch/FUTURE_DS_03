@@ -64,15 +64,13 @@ Conversion rate is calculated as successful subscriptions divided by total conta
 
 ## 🖼️ Dashboard Screenshots
 
-Add your uploaded screenshot images below. If they are stored in the repository root, use these paths:
+### Page 1 — Marketing Performance Overview
 
-### Page 1 — Overview
-![Marketing Performance Overview](Overview.png)
+![Marketing Performance Overview](Screenshots/Page1_Overview.png)
 
 ### Page 2 — Campaign Analysis
-![Interactive Campaign Analysis](Campaign_Analysis.png)
 
-If your screenshots are inside a folder, update the image paths to include that folder name.
+![Campaign Analysis](Screenshots/Page2_Campaign_Analysis.png)
 
 ## 🔍 Methodology
 
